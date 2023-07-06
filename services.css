@@ -807,7 +807,7 @@ color: #0a0a0a;
    
    /* about section styling */
 .about .title::after{
-  content: "What we do";
+  content: "";
 }
 .about .about-content .left{
   width: 45%;
