@@ -237,6 +237,7 @@ nav {
 }
 
 
+
 /* Responsive code start */
 @media screen and (max-width: 1300px){
   .wrapper nav{
@@ -696,6 +697,12 @@ nav {
     color: var(--white);
   }
   
+  .sidebar .categories{
+   /*  position: absolute;
+    left: 50px;
+    margin-top: 150px; */
+    font-size: 25px;
+  }
   .site-content > .sidebar .categories-list{
     font-family:var(--body-font);   
   }
@@ -766,7 +773,7 @@ nav {
 
 
 
-  @media (max-width:900px) {
+  @media (max-width:500px) {
    .categories-list{
    margin-right: 500px;
    }
@@ -774,6 +781,7 @@ nav {
      position: absolute;
      left: 50px;
      margin-top: 150px;
+     font-size: 25px;
    }
    .categories-list{
      margin-left: 250px;
