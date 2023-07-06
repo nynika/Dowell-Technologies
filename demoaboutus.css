@@ -486,7 +486,11 @@ img {
         
         
         @media screen and (max-width: 860px) {
-          
+
+
+          .homepage{
+    max-height: 460px;
+  }
         
         
           section > p {
