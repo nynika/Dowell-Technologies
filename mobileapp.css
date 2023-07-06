@@ -430,7 +430,7 @@ img {
    
     }
 .about .title::after{
-  content: "What we do";
+  content: "";
 }
 .about .about-content .left{
   width: 45%;
