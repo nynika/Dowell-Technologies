@@ -247,14 +247,6 @@ btns.forEach((bttn, i) => {
     });
   
 
-  
-  
-
-
-
-
-
-
     // search-box open close js code
     let navbar = document.querySelector(".navbar");
     /* let searchBox = document.querySelector(".search-box .bx-search"); */
