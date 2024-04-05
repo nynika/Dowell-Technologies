@@ -84,6 +84,53 @@ btns.forEach((bttn, i) => {
 
 
       
+////////////////////suji js ///////////////////
+
+(function ($) {
+      "use strict";
+      
+      // Header scroll class
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('#header').addClass('header-scrolled');
+          } else {
+              $('#header').removeClass('header-scrolled');
+          }
+      });
+      if ($(window).scrollTop() > 100) {
+          $('#header').addClass('header-scrolled');
+      }
+      
+      
+      // Mobile Navigation
+      if ($('#nav-menu-container').length) {
+          var $mobile_nav = $('#nav-menu-container').clone().prop({
+              id: 'mobile-nav'
+          });
+          
+          $mobile_nav.find('> ul').attr({
+              'class': '',
+              'id': ''
+          });
+          
+          $('body').append($mobile_nav);
+          $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
+          $('body').append('<div id="mobile-body-overly"></div>');
+  
+          $(document).on('click', '#mobile-nav-toggle', function (e) {
+              $('body').toggleClass('mobile-nav-active');
+              $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+              $('#mobile-body-overly').toggle();
+          });
+          
+          $(document).on('click', '#mobile-nav ul li a', function (e) {
+              $('body').toggleClass('mobile-nav-active');
+              $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+              $('#mobile-body-overly').toggle();
+          });
+      }
+
+      
       // Smooth scrolling on the navbar links
       $(".nav-menu a, #mobile-nav a").on('click', function (event) {
           if (this.hash !== "") {
